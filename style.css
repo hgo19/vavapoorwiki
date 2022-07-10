@@ -28,6 +28,7 @@ body {
   display: flex;
   margin-top: 100px;
   justify-content: center;
+  margin-bottom: 115px;
 }
 
 .line {
@@ -97,4 +98,18 @@ body {
 #item-description p {
   background-color: #111;
   padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4655;
+}
+
+#footer {
+  background-color: #2b2b2b;
+  color: white;
+  width: 100%;
+  font-size: 10px;
+  position: absolute;
+  text-align: center;
 }

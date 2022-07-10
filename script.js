@@ -7,6 +7,12 @@ const itemDescreption = document.querySelector('#item-description');
 const vavaApi = (categorie) => `https://valorant-api.com/v1/${categorie}`;
 
 const appnedOption = (name) => {
+  const option2 = document.createElement('option');
+  option2.disabled = true;
+  option2.selected = true;
+  option2.hidden = true;
+  option2.innerText = 'Opções';
+  secondSelect.appendChild(option2);
   const option = document.createElement('option');
   option.value = name;
   option.innerText = name;
@@ -20,8 +26,6 @@ const vavaAgents = async () => {
   const names = data.map((e) => e.displayName);
   names.forEach((e) => appnedOption(e));
 };
-
-window.onload = vavaAgents;
 
 const vavaMaps = async () => {
   const result = await fetch(vavaApi('maps'));
