@@ -5,32 +5,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VavaWiki</title>
+  <title>VavaPoorWiki</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header id="header">
-    <h1>VavaWiki</h1>
+    <h1>VavaPoorWiki</h1>
   </header>
   <main id="main-content">
     <section id="options">
-      <label for="primeiro">Escolha sua categoria:</label>
-      <select id='first-slection' name="primeiro">
-        <option value="agents">Agentes</option>
-        <option value="maps">Mapas</option>
-        <option value="weapons">Armas</option>
-      </select>
-      <label for="segundo">Escolha sua sub-categoria:</label>
-      <select id='second-slection' name="segundo">
-      </select>
+      <div class="line">
+        <label for="primeiro">Escolha sua categoria:</label>
+        <select id='first-slection' name="primeiro">
+          <option value="agents">Agentes</option>
+          <option value="maps">Mapas</option>
+          <option value="weapons">Armas</option>
+        </select>
+      </div>
+      <div class="line">
+        <label for="segundo">Escolha sua sub-categoria:</label>
+        <select id='second-slection' name="segundo">
+        </select>
+      </div>
     </section>
     <section id="infos">
       <div id="item-img"></div>
-      <div id="item-description"> 
+      <div id="item-description">
       </div>
     </section>
   </main>

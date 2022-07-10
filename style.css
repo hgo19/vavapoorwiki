@@ -6,11 +6,12 @@
 
 body {
   background-color: #ece8e1;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 #header {
-  background-color: #111  ;
+  background-color: #111;
   display: flex;
   justify-content: center;
 }
@@ -29,22 +30,71 @@ body {
   justify-content: center;
 }
 
+.line {
+  margin: 0 0 10px 0;
+  color: #ece8e1; 
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #options {
   display: flex;
   flex-direction: column;
-  background-color: gray;
   width: 300px;
   height: 700px;
   align-items: center;
   justify-content: center;
+  background-image: url(./img/vavaOmen.png);
+  background-position: 50% 25%; 
+  background-size: cover;
+  margin-right: 3px;
 }
 
 #options select {
   width: 200px;
+  height: 40px;
+  background-color: #111;
+  color: white;
+  border-radius: 0px;
+  text-align: center;
+}
+
+#options select:focus-visible {
+  outline: none;
 }
 
 #infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 700px;
   height: 700px;
-  background-color: goldenrod;
+  background-image: url(./img/vava2.png);
+  background-position: 50% 25%; 
+  background-size: cover;
+}
+
+#item-img {
+  margin-top: 100px;
+}
+
+#item-img img {
+  max-width: 500px;
+}
+
+#item-description {
+  display: flex;  
+  color: white;
+  width: 400px; 
+  margin-top: 20px;
+  justify-content: center;   
+}
+
+#item-description p {
+  background-color: #111;
+  padding: 10px;
 }

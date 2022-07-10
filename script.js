@@ -42,12 +42,18 @@ const vavaWeapons = async () => {
 firstSelect.addEventListener('click', () => {
   if (firstSelect.value === 'agents') {
     secondSelect.innerHTML = '';
+    itemImage.innerHTML = '';
+    itemDescreption.innerHTML = '';
     vavaAgents();
   } else if (firstSelect.value === 'maps') {
     secondSelect.innerHTML = '';
+    itemImage.innerHTML = '';
+    itemDescreption.innerHTML = '';
     vavaMaps();
   } else if (firstSelect.value === 'weapons') {
     secondSelect.innerHTML = '';
+    itemImage.innerHTML = '';
+    itemDescreption.innerHTML = '';
     vavaWeapons();
   }
 });
